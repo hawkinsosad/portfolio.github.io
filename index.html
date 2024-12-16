@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FreeCodeCamp Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container" id="survey-form">
+    <h1 id="title">Test №1</h1>
+    <p id="description">Test for my Qualification</p>
+
+    <form>
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email" id="email-label">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="number" id="number-label">Age (optional)</label>
+      <input type="number" id="number" name="age" placeholder="Enter your age" min="1" max="100" required>
+
+      <label for="current-role">Which options best describes your current role?</label>
+      <select id="dropdown" name="current-role" required>
+        <option value="" disabled selected>Select current role</option>
+        <option value="Frontend Dev">Frontend Developer</option>
+        <option value="Backend Dev">Backend Developer</option>
+        <option value="Full-stack Dev">Full-stack Developer</option>
+        <option value="Data Scientist">Data Scientist</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label>Would you recommend my site to employers?</label>
+      <input type="radio" id="recommend-yes" name="recommend" value="Yes" required>
+      <label for="recommend-yes">Yes</label>
+      <input type="radio" id="recommend-maybe" name="recommend" value="Maybe">
+      <label for="recommend-maybe">Maybe</label>
+      <input type="radio" id="recommend-absolutely" name="recommend" value="Absolutely">
+      <label for="recommend-absolutely">Absolutely</label>
+
+      <label for="rate">Rate this site 1 to 5</label>
+      <select id="rate" name="rate" required>
+        <option value="" disabled selected>Select your rate</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+
+      <label>What would you like to improve in your skills?</label>
+      <input type="checkbox" id="improve-js" name="improve" value="Library for JavaScript">
+      <label for="improve-js">Library for JavaScript</label>
+      <input type="checkbox" id="improve-css" name="improve" value="Library for CSS">
+      <label for="improve-css">Library for CSS</label>
+      <input type="checkbox" id="improve-js-lib" name="improve" value="JavaScript">
+      <label for="improve-js-lib">JavaScript</label>
+      <input type="checkbox" id="improve-figma" name="improve" value="Figma">
+      <label for="improve-figma">Figma</label>
+      <input type="checkbox" id="improve-other" name="improve" value="Other">
+      <label for="improve-other">Other</label>
+
+      <label for="comments">Any comments and thoughts about my site?</label>
+      <textarea id="comments" name="comments" placeholder="Enter your comment here..." rows="4" required></textarea>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
